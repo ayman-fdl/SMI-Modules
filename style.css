@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url(img/back.jpg);
+    margin: auto;
+    width: 100%;
+    }
+
+.container {
+    width: 45%;
+    height: 700px;
+    margin: auto;
+    background-color: white;
+    border: 5px;
+    border-style: double;
+    border-color: saddlebrown;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    text-align: center;
+}
+
+.title li {
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.content p{
+    color: brown;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+.title .c {
+    width: 100px;
+}
+
+/* Section  */
+section ul {
+    padding: 0;
+}
+
+section ul li {
+    text-align: center;
+    padding: 0;
+    height: 78px;
+}
+
+section ul li button {
+    font-size: 30px;
+    width: 500px;
+    height: 60px;
+    cursor: pointer;
+    border-radius:30px;
+    border-color: white;
+    cursor: pointer;
+}
+
+section ul li button:hover {
+    background-color: rgb(177, 89, 25);
+    color: white;
+}
+
+/* footer  */
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 20px;
+}
+
+footer ul li {
+    margin: auto;
+    color: saddlebrown;
+    font-family: 'Fruktur', cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    border:solid saddlebrown ;
+    border-width: 0 0 3px 0;
+
+}
+
+.pop_father {
+    position: relative;
+}
+
+.pop_up {
+    visibility: hidden;
+    font-family: 'Montserrat', sans-serif;
+    width: 350px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 10;
+    bottom: 100%;
+    left: -70%;
+    margin-left: -60px;
+}
+
+.pop_father:hover .pop_up {
+    visibility: visible;
+    transition-delay: 0.15s;
+}
